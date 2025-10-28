@@ -36,3 +36,6 @@ def test_add_metric():
     calculator.add_metric("test_metric", 0.85)
     results = calculator.get_results()
     assert ("test_metric", 0.85) in results
+
+if __name__=='__main__':
+    pytest.main()
